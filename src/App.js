@@ -1,25 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from "react";
+import Border from "./testes/bordesize";
+import Calculadora from "./testes/calculadora";
+
+const Inicial = {
+  Number1 : '',
+  Number2 :'',
+  Sinal:'+'
+}
+
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <>
+      <Calculadora/>
+      <Border/>
+    </>
+  )
 }
 
 export default App;
